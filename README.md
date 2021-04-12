@@ -1,8 +1,5 @@
 # Muplay-1.4.2
 ![GitHub](https://img.shields.io/badge/developer-hexahedron74-blue)
-![GitHub](https://img.shields.io/github/license/hexahedron74/Muplay-1.4.2)
-![GitHub](https://img.shields.io/github/languages/top/hexahedron74/Muplay-1.4.2)
-![GitHub](https://img.shields.io/github/languages/code-size/hexahedron74/Muplay-1.4.2)
 
 ---
 ### 소개
