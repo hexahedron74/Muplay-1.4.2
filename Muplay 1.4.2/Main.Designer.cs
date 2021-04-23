@@ -39,14 +39,13 @@ namespace Muplay_1._4._2
             this.label1 = new System.Windows.Forms.Label();
             this.Elipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.button2 = new System.Windows.Forms.Button();
+            this.home = new System.Windows.Forms.Panel();
             this.pnlSideBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlSideBar
             // 
             this.pnlSideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(240)))), ((int)(((byte)(244)))));
-            this.pnlSideBar.Controls.Add(this.button2);
             this.pnlSideBar.Controls.Add(this.guna2Button4);
             this.pnlSideBar.Controls.Add(this.guna2Button3);
             this.pnlSideBar.Controls.Add(this.guna2Button2);
@@ -130,7 +129,7 @@ namespace Muplay_1._4._2
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(230, 50);
             this.guna2Button1.TabIndex = 2;
-            this.guna2Button1.Text = "No Playing...";
+            this.guna2Button1.Text = "Music Player";
             this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label2
@@ -165,14 +164,13 @@ namespace Muplay_1._4._2
             this.guna2BorderlessForm1.BorderRadius = 15;
             this.guna2BorderlessForm1.ContainerControl = this;
             // 
-            // button2
+            // home
             // 
-            this.button2.Location = new System.Drawing.Point(93, 493);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(41, 27);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.home.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.home.Location = new System.Drawing.Point(230, 0);
+            this.home.Name = "home";
+            this.home.Size = new System.Drawing.Size(970, 720);
+            this.home.TabIndex = 1;
             // 
             // Main
             // 
@@ -180,6 +178,7 @@ namespace Muplay_1._4._2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 720);
+            this.Controls.Add(this.home);
             this.Controls.Add(this.pnlSideBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main";
@@ -202,7 +201,7 @@ namespace Muplay_1._4._2
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel home;
     }
 }
 
