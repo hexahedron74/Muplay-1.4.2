@@ -40,7 +40,10 @@ namespace Muplay_1._4._2
             this.Elipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.home = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.pnlSideBar.SuspendLayout();
+            this.home.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlSideBar
@@ -166,11 +169,25 @@ namespace Muplay_1._4._2
             // 
             // home
             // 
+            this.home.Controls.Add(this.panel1);
             this.home.Dock = System.Windows.Forms.DockStyle.Fill;
             this.home.Location = new System.Drawing.Point(230, 0);
             this.home.Name = "home";
             this.home.Size = new System.Drawing.Size(970, 720);
             this.home.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(970, 36);
+            this.panel1.TabIndex = 0;
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.ContainerControl = this;
+            this.guna2DragControl1.TargetControl = this.panel1;
             // 
             // Main
             // 
@@ -186,6 +203,7 @@ namespace Muplay_1._4._2
             this.Text = "Muplay V.1.4.2";
             this.pnlSideBar.ResumeLayout(false);
             this.pnlSideBar.PerformLayout();
+            this.home.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -202,6 +220,8 @@ namespace Muplay_1._4._2
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private System.Windows.Forms.Panel home;
+        private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }
 

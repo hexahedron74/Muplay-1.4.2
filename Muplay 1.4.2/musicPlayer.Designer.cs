@@ -30,11 +30,10 @@ namespace Muplay_1._4._2
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.guna2ProgressBar1 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.guna2TrackBar1 = new Guna.UI2.WinForms.Guna2TrackBar();
+            this.pauseBtn = new System.Windows.Forms.Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.playBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -42,36 +41,44 @@ namespace Muplay_1._4._2
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.panel1.Controls.Add(this.bunifuCustomLabel2);
-            this.panel1.Controls.Add(this.bunifuCustomLabel1);
+            this.panel1.Controls.Add(this.guna2TrackBar1);
             this.panel1.Controls.Add(this.guna2PictureBox1);
-            this.panel1.Controls.Add(this.guna2ProgressBar1);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.playBtn);
+            this.panel1.Controls.Add(this.pauseBtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 630);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(970, 90);
             this.panel1.TabIndex = 0;
             // 
-            // button1
+            // bunifuCustomLabel1
             // 
-            this.button1.Location = new System.Drawing.Point(463, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(30, 30);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
-            // guna2ProgressBar1
+            // bunifuCustomLabel2
             // 
-            this.guna2ProgressBar1.BorderRadius = 8;
-            this.guna2ProgressBar1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
-            this.guna2ProgressBar1.Location = new System.Drawing.Point(282, 66);
-            this.guna2ProgressBar1.Name = "guna2ProgressBar1";
-            this.guna2ProgressBar1.ShadowDecoration.Parent = this.guna2ProgressBar1;
-            this.guna2ProgressBar1.Size = new System.Drawing.Size(403, 10);
-            this.guna2ProgressBar1.TabIndex = 2;
-            this.guna2ProgressBar1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            // 
+            // guna2TrackBar1
+            // 
+            this.guna2TrackBar1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.guna2TrackBar1.HoverState.Parent = this.guna2TrackBar1;
+            this.guna2TrackBar1.IndicateFocus = false;
+            this.guna2TrackBar1.Location = new System.Drawing.Point(259, 64);
+            this.guna2TrackBar1.Name = "guna2TrackBar1";
+            this.guna2TrackBar1.Size = new System.Drawing.Size(456, 23);
+            this.guna2TrackBar1.TabIndex = 5;
+            this.guna2TrackBar1.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(113)))), ((int)(((byte)(255)))));
+            // 
+            // pauseBtn
+            // 
+            this.pauseBtn.FlatAppearance.BorderSize = 0;
+            this.pauseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pauseBtn.Image = global::Muplay_1._4._2.Properties.Resources.pause__2_;
+            this.pauseBtn.Location = new System.Drawing.Point(465, 17);
+            this.pauseBtn.Name = "pauseBtn";
+            this.pauseBtn.Size = new System.Drawing.Size(40, 40);
+            this.pauseBtn.TabIndex = 6;
+            this.pauseBtn.UseVisualStyleBackColor = true;
+            this.pauseBtn.Click += new System.EventHandler(this.pauseBtn_Click);
             // 
             // guna2PictureBox1
             // 
@@ -83,27 +90,17 @@ namespace Muplay_1._4._2
             this.guna2PictureBox1.TabIndex = 3;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // bunifuCustomLabel1
+            // playBtn
             // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(96, 54);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(59, 22);
-            this.bunifuCustomLabel1.TabIndex = 4;
-            this.bunifuCustomLabel1.Text = "Artist";
-            // 
-            // bunifuCustomLabel2
-            // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(96, 26);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(50, 18);
-            this.bunifuCustomLabel2.TabIndex = 1;
-            this.bunifuCustomLabel2.Text = "Name";
+            this.playBtn.FlatAppearance.BorderSize = 0;
+            this.playBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.playBtn.Image = global::Muplay_1._4._2.Properties.Resources.play;
+            this.playBtn.Location = new System.Drawing.Point(465, 17);
+            this.playBtn.Name = "playBtn";
+            this.playBtn.Size = new System.Drawing.Size(40, 40);
+            this.playBtn.TabIndex = 1;
+            this.playBtn.UseVisualStyleBackColor = true;
+            this.playBtn.Click += new System.EventHandler(this.playBtn_Click);
             // 
             // musicPlayer
             // 
@@ -123,10 +120,9 @@ namespace Muplay_1._4._2
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private Guna.UI2.WinForms.Guna2ProgressBar guna2ProgressBar1;
+        private System.Windows.Forms.Button playBtn;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private BunifuCustomLabel bunifuCustomLabel2;
-        private BunifuCustomLabel bunifuCustomLabel1;
+        private Guna.UI2.WinForms.Guna2TrackBar guna2TrackBar1;
+        private System.Windows.Forms.Button pauseBtn;
     }
 }

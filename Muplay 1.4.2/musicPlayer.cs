@@ -16,5 +16,15 @@ namespace Muplay_1._4._2
         {
             InitializeComponent();
         }
+
+        private void pauseBtn_Click(object sender, EventArgs e)
+        {
+            playBtn.BringToFront();
+        }
+
+        private void playBtn_Click(object sender, EventArgs e)
+        {
+            pauseBtn.BringToFront();
+        }
     }
 }
